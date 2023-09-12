@@ -3,14 +3,15 @@ server:
 spring:
   application:
     name: movie-service
-  data:
-    mongodb:
-      uri: mongodb://admin:admin_password@localhost/test?authSource=admin
-      host: localhost 
-      port: 27018
-      database: test 
-      username: admin 
-      password: admin_password 
+datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3380/movie-dev
+    username: usr-movie
+    password: pwd-movie
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
 
 eureka:
   client:
