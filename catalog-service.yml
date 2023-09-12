@@ -5,9 +5,8 @@ spring:
     name: catalog-service
   data:
     mongodb:
-      authetication-database: admin
       host: localhost 
-      port: 27017
+      port: 28000
       database: test 
       username: admin 
       password: admin_password 
