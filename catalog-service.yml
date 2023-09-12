@@ -9,7 +9,7 @@ spring:
   data:
     mongodb:
       database: test
-      port: 27019
+      port: 27017
 
 eureka:
   client:
