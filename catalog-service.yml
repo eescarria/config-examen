@@ -3,13 +3,13 @@ server:
 spring:
   application:
     name: catalog-service
-   mongodb:
-    embedded:
-      version: 4.0.2
   data:
     mongodb:
-      database: test
+      host: localhost 
       port: 27017
+      database: test 
+      username: admin 
+      password: admin_password 
 
 eureka:
   client:
