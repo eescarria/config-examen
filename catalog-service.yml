@@ -5,6 +5,7 @@ spring:
     name: catalog-service
   data:
     mongodb:
+      uri: mongodb://admin:admin_password@localhost/test?authSource=admin
       host: localhost 
       port: 8000
       database: test 
