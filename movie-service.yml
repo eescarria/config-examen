@@ -23,7 +23,7 @@ spring:
 
 queue:
   movie:
-    name: TestQueue
+    name: TestQueueMovie
     
 eureka:
   client:
