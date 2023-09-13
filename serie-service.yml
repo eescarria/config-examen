@@ -3,6 +3,14 @@ server:
 spring:
   application:
     name: serie-service
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
+  zipkin:
+    base-url: http://localhost:9411/
+    enabled: true
   mongodb:
     embedded:
       version: 4.0.2
@@ -11,6 +19,9 @@ spring:
       database: test
       port: 27017
 
+queue:
+  serie:
+    name: TestQueue
 
 eureka:
   client:
