@@ -12,6 +12,18 @@ spring:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
+  zipkin:
+    base-url: http://localhost:9411/
+    enabled: true
+
+queue:
+  movie:
+    name: TestQueueMovie
 
 eureka:
   client:
@@ -19,17 +31,10 @@ eureka:
     fetch-registry: true
     registry-fetch-interval-seconds: 5
     healthcheck:
-      enabled : true
+      enabled: true
     service-url:
       default-zone: http://localhost:8761/eureka
     instance:
       prefer-ip-address: false
       lease-renewal-interval-in-seconds: 5
       lease-expiration-duration-in-seconds: 10
-    
-
-
-
-
-
-    
