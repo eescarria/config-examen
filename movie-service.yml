@@ -32,12 +32,12 @@ management:
 logging:
   logging:
     pattern:
-      level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
+      level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
   level:
     org:
       springframework:
         web: DEBUG
-  
+
 eureka:
   client:
     register-with-eureka: true
